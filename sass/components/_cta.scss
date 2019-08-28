@@ -1,0 +1,42 @@
+.cta {
+  display: flex;
+
+
+  &__item {
+    border-bottom: 2px solid $color-white;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+  &__input {
+    margin-left: 2.3rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    width: 23rem;
+
+    &::placeholder {
+      color: white;
+    }
+
+    &:focus {
+      outline: none;
+      color: white;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__btn {
+    font-size: 2rem;
+    font-weight: $medium;
+    letter-spacing: 0.2rem;
+  }
+}
