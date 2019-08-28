@@ -56,6 +56,26 @@ body {
   .paragraph--white {
     color: #fff; }
 
+.nav {
+  display: flex;
+  padding: 5.6rem 20rem;
+  align-items: center;
+  justify-content: space-between; }
+  .nav__list {
+    list-style: none; }
+  .nav__item {
+    display: inline;
+    margin-left: 8.2rem; }
+  .nav__btn:link, .nav__btn:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+    transition: all 0.2s;
+    padding-bottom: 1.5rem; }
+  .nav__btn:hover, .nav__btn:active {
+    border-bottom: 2px solid white; }
+
 .header {
   grid-column: full-start / full-end;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero.png);
