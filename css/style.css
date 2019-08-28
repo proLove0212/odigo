@@ -122,3 +122,28 @@ body {
     .header .hero__paragraph {
       margin-bottom: 5.9rem;
       max-width: 55%; }
+
+.section-benefits {
+  z-index: 100;
+  background-color: #fff;
+  grid-column: center-start / center-end;
+  padding: 10rem;
+  box-shadow: 0 2px 20px rgba(21, 24, 36, 0.16); }
+  .section-benefits__heading {
+    margin-bottom: 10rem; }
+  .section-benefits__box {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7.5rem; }
+
+.section-gallery {
+  grid-column: center-start / center-end; }
+  .section-gallery__seeall {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+
+.section-trips {
+  grid-column: center-start / center-end;
+  grid-row-gap: 7.7rem; }

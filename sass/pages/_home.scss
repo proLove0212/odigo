@@ -25,3 +25,38 @@
     }
   }
 }
+
+.section-benefits {
+  z-index: 100;
+  background-color: $color-white;
+  grid-column: center-start / center-end;
+  padding: 10rem;
+  box-shadow: 0 2px 20px rgba(#151824, 0.16);
+
+  &__heading {
+    margin-bottom: 10rem;
+  }
+
+  &__box {
+    display: grid;
+    grid-template-rows: min-content;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7.5rem;
+
+  }
+}
+
+.section-gallery {
+  grid-column: center-start / center-end;
+
+  &__seeall {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.section-trips {
+  grid-column: center-start / center-end;
+  grid-row-gap: 7.7rem;
+}
