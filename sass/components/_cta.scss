@@ -1,6 +1,10 @@
 .cta {
   display: flex;
 
+  @include respond($lap-m) {
+    flex-direction: column;
+  }
+
   &__item {
     border-bottom: 2px solid $color-white;
     margin-right: 3rem;
@@ -9,6 +13,9 @@
     display: flex;
     align-items: center;
 
+    @include respond($lap-m) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__input {

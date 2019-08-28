@@ -3,6 +3,10 @@
     width: 5.8rem;
     height: 5.8rem;
     margin-bottom: 3.7rem;
+
+    @include respond($lap-xl) {
+      margin-bottom: 3rem;
+    }
   }
 
   &__title {
@@ -10,9 +14,17 @@
     font-weight: $medium;
     color: $color-black;
     margin-bottom: 2.6rem;
+
+    @include respond($lap-xl) {
+      margin-bottom: 2.1rem;
+    }
   }
 
   &__description {
     margin-bottom: 3.9rem;
+
+    @include respond($lap-xl) {
+      margin-bottom: 3rem;
+    }
   }
 }

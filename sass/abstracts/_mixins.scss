@@ -1,0 +1,60 @@
+// RESPONSIVE BREAKPOINTS
+$lap-2xl: 90em; //1440px
+$lap-xl: 81.25em; //1300px
+$lap-l: 75em; //1200px
+$lap: 64em; //1024px
+$lap-m: 56.25em; //900px
+$lap-s: 46.8em; //750px
+$phone-l: 37.5em; //750px
+$phone-m: 28.12em; //450px
+
+//MEDIA BREAKPOINT MANAGER
+@mixin respond($breakpoint) {
+  @if $breakpoint==$lap-2xl {
+    @media screen and (max-width: $lap-2xl) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$lap-xl {
+    @media screen and (max-width: $lap-xl) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$lap-l {
+    @media screen and (max-width: $lap-l) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$lap {
+    @media screen and (max-width: $lap) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$lap-m {
+    @media screen and (max-width: $lap-m) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$lap-s {
+    @media screen and (max-width: $lap-s) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$phone-l {
+    @media screen and (max-width: $phone-l) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==$phone-m {
+    @media screen and (max-width: $phone-m) {
+      @content;
+    }
+  }
+}
