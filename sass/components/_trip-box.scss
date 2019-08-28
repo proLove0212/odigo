@@ -1,0 +1,22 @@
+.trip-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+
+  &__content {
+    flex: 0 0 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    .paragraph {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+  }
+}

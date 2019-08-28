@@ -1,0 +1,41 @@
+.btn {
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+
+	&__arrow,
+	&__arrow:link,
+	&__arrow:visited {
+		margin-right: 2.7rem;
+		color: $color-primary;
+		font-weight: $regular;
+
+		img {
+			margin-left: 2.7rem;
+			width: 3.3rem;
+			transition: all 0.2s;
+		}
+	}
+
+	&__arrow:hover,
+	&__arrow:active {
+		img {
+			margin-left: 2rem;
+		}
+	}
+
+	&__full,
+	&__full:link,
+	&__full:visited {
+		color: $color-white;
+		background-color: $color-primary;
+		padding: 1.2rem 1.9rem;
+		transition: all 0.2s;
+	}
+
+	&__full:hover,
+	&__full:active {
+		transform: scale(1.05);
+	}
+}

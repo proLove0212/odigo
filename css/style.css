@@ -56,6 +56,43 @@ body {
   .paragraph--white {
     color: #fff; }
 
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  cursor: pointer; }
+  .btn__arrow, .btn__arrow:link, .btn__arrow:visited {
+    margin-right: 2.7rem;
+    color: #006dfe;
+    font-weight: 400; }
+    .btn__arrow img, .btn__arrow:link img, .btn__arrow:visited img {
+      margin-left: 2.7rem;
+      width: 3.3rem;
+      transition: all 0.2s; }
+  .btn__arrow:hover img, .btn__arrow:active img {
+    margin-left: 2rem; }
+  .btn__full, .btn__full:link, .btn__full:visited {
+    color: #fff;
+    background-color: #006dfe;
+    padding: 1.2rem 1.9rem;
+    transition: all 0.2s; }
+  .btn__full:hover, .btn__full:active {
+    transform: scale(1.05); }
+
+.benefit-card__icon {
+  width: 5.8rem;
+  height: 5.8rem;
+  margin-bottom: 3.7rem; }
+
+.benefit-card__title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 2.6rem; }
+
+.benefit-card__description {
+  margin-bottom: 3.9rem; }
+
 .cta {
   display: flex; }
   .cta__item {
@@ -83,6 +120,103 @@ body {
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.2rem; }
+
+.gallery {
+  display: grid;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem; }
+  .gallery__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue; }
+    .gallery__item-1 {
+      grid-row: 1 / 7;
+      grid-column: 1 / 7; }
+    .gallery__item-2 {
+      grid-row: 1 / 7;
+      grid-column: 7 / 13; }
+    .gallery__item-3 {
+      grid-row: 7 / 11;
+      grid-column: 1 / 5; }
+    .gallery__item-4 {
+      grid-row: 7 / 11;
+      grid-column: 5 / 9; }
+    .gallery__item-5 {
+      grid-row: 7 / 11;
+      grid-column: 9 / 13; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
+  .gallery__title {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: #fff;
+    font-size: 4rem; }
+
+.place-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .place-box__img {
+    width: 100%;
+    display: block;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1; }
+  .place-box__imp {
+    background-color: rgba(21, 24, 36, 0.6);
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    z-index: 10;
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem; }
+  .place-box__title {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 500; }
+  .place-box__review {
+    display: flex; }
+  .place-box__likes, .place-box__comments {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1.5rem; }
+    .place-box__likes img, .place-box__comments img {
+      height: 1.4rem;
+      width: auto;
+      margin-left: 0.5rem; }
+    .place-box__likes p, .place-box__comments p {
+      font-size: 1.6rem;
+      color: #fff;
+      font-weight: 500; }
+  .place-box__description {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 4.5rem;
+    margin-bottom: 3.1rem;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3; }
+  .place-box__btn {
+    justify-self: start; }
+
+.trip-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem; }
+  .trip-box__content {
+    flex: 0 0 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column; }
+    .trip-box__content .paragraph {
+      margin-bottom: 2rem; }
+  .trip-box__img img {
+    width: 100%; }
 
 .nav {
   display: flex;
