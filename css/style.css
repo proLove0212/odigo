@@ -147,3 +147,28 @@ body {
 .section-trips {
   grid-column: center-start / center-end;
   grid-row-gap: 7.7rem; }
+
+.section-places {
+  grid-column: center-start / center-end; }
+  .section-places__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem; }
+
+.section-video {
+  grid-column: full-start / full-end; }
+  .section-video__bg {
+    width: 100%;
+    display: block; }
+  .section-video__box {
+    width: 100%;
+    position: relative; }
+    .section-video__box a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .section-video__box a img {
+        width: 100%;
+        height: 100%; }
