@@ -56,6 +56,34 @@ body {
   .paragraph--white {
     color: #fff; }
 
+.cta {
+  display: flex; }
+  .cta__item {
+    border-bottom: 2px solid #fff;
+    margin-right: 3rem;
+    padding-bottom: 2rem;
+    padding-right: 2.5rem;
+    display: flex;
+    align-items: center; }
+  .cta__input {
+    margin-left: 2.3rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.8rem;
+    width: 23rem; }
+    .cta__input::placeholder {
+      color: white; }
+    .cta__input:focus {
+      outline: none;
+      color: white; }
+  .cta__icon {
+    width: 2rem;
+    height: 2rem; }
+  .cta__btn {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem; }
+
 .nav {
   display: flex;
   padding: 5.6rem 20rem;
