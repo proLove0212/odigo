@@ -1,0 +1,52 @@
+.nav {
+  display: flex;
+  padding: 5.6rem 20rem;
+  align-items: center;
+  justify-content: space-between;
+
+  @include respond($lap-l) {
+    padding: 5.6rem 16rem;
+  }
+
+  @include respond($lap-l) {
+    padding: 5.6rem 10rem;
+  }
+
+  &__list {
+    list-style: none;
+
+    //FIXME: Use javascript to turn this into a hamburger menu
+    @include respond($lap-s) {
+      display: none;
+      width: 0;
+    }
+  }
+
+  &__item {
+    display: inline;
+    margin-left: 8.2rem;
+
+    @include respond($lap-xl) {
+      margin-left: 6rem;
+    }
+
+    @include respond($lap-l) {
+      margin-left: 4rem;
+    }
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: $regular;
+    transition: all 0.2s;
+    padding-bottom: 1.5rem;
+  }
+
+  &__btn:hover,
+  &__btn:active {
+    border-bottom: 2px solid white;
+  }
+}

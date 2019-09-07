@@ -1,0 +1,81 @@
+//FONT-WEIGHT
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$black: 900;
+
+//FONT COLOR
+$color-black: #000;
+$color-white: #fff;
+$color-heading: #102746;
+
+$color-primary: #006dfe;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond($lap-l) {
+    font-size: 58%;
+  }
+
+  @include respond($lap) {
+    font-size: 55%;
+  }
+
+  @include respond($phone-l) {
+    font-size: 50%;
+  }
+
+  @include respond($phone-m) {
+    font-size: 40%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin-top: -10rem;
+
+  @include respond($lap-m) {
+    margin-top: 5rem;
+  }
+
+  display: grid;
+  grid-template-rows: repeat(5, min-content);
+
+  grid-template-columns: [full-start] minmax(8rem, 1fr) [center-start] minmax(min-content, 1260px) [center-end] minmax(8rem, 1fr) [full-end];
+  grid-row-gap: 13rem;
+
+  @include respond($lap-l) {
+    grid-template-columns:
+      [full-start] minmax(6rem, 1fr) [center-start] minmax(min-content, 1260px) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-row-gap: 10rem;
+  }
+
+  @include respond($lap) {
+    grid-template-columns:
+      [full-start] minmax(5rem, 1fr) [center-start] minmax(min-content, 1260px) [center-end] minmax(5rem, 1fr) [full-end];
+  }
+
+  @include respond($lap) {
+    grid-template-columns:
+      [full-start] minmax(4rem, 1fr) [center-start] minmax(min-content, 1260px) [center-end] minmax(4rem, 1fr) [full-end];
+    grid-row-gap: 8rem;
+  }
+
+  @include respond($phone-l) {
+    grid-template-columns:
+      [full-start] minmax(2rem, 1fr) [center-start] minmax(min-content, 1260px) [center-end] minmax(2rem, 1fr) [full-end];
+    grid-row-gap: 4rem;
+  }
+}
