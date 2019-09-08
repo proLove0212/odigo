@@ -184,8 +184,12 @@
 
     a {
       text-decoration: none;
-      color: $color-white;
+      color: darken($color:$color-white, $amount: 30);
       margin-bottom: 3px;
+
+      &:hover {
+        color: white
+      }
     }
 
     @include respond($lap-s) {
