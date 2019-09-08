@@ -102,12 +102,16 @@ body {
   .btn__arrow:hover img, .btn__arrow:active img {
     margin-left: 2rem; }
   .btn__full, .btn__full:link, .btn__full:visited {
-    color: #fff;
+    color: #cccccc;
     background-color: #006dfe;
     padding: 1.2rem 1.9rem;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); }
   .btn__full:hover, .btn__full:active {
-    transform: scale(1.05); }
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #0057cb;
+    color: #fff; }
 
 .benefit-card__icon {
   width: 5.8rem;
